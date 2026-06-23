@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl"
+       version="1.0"
+       class="in-text"
+       default-locale="en-US">
+
+  <info>
+    <title>Materials Review Numbered</title>
+    <id>https://github.com/YOURUSERNAME/mendeley-csl</id>
+    <updated>2026-06-23</updated>
+  </info>
+
+  <citation collapse="citation-number">
+    <layout prefix="[" suffix="]">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography>
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="] "/>
+
+      <names variable="author" delimiter=", ">
+        <name
+          name-as-sort-order="all"
+          initialize-with="."
+          and="text"/>
+      </names>
+
+      <text value=". "/>
+      <text variable="title"/>
+      <text value=". "/>
+
+      <text variable="container-title" font-style="italic"/>
+      <text value=", "/>
+
+      <text variable="volume"/>
+      <text value=" "/>
+      <text variable="issue" prefix="(" suffix=")"/>
+
+      <text value=", "/>
+      <text variable="page"/>
+
+      <date variable="issued" prefix=". (" suffix=")">
+        <date-part name="year"/>
+      </date>
+
+      <text value="."/>
+    </layout>
+  </bibliography>
+
+</style>
